@@ -36,7 +36,7 @@ export default function About() {
             {/* Links sociales */}
             <div className="flex gap-4 mt-8">
               <a
-                href="https://github.com/tu-usuario"
+                href="https://github.com/Og1707"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors border border-border px-4 py-2 rounded-lg hover:border-primary"
@@ -45,7 +45,7 @@ export default function About() {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com/in/tu-usuario"
+                href="https://www.linkedin.com/in/osman-p%C3%A9rez-690aa9271/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-muted hover:text-accent transition-colors border border-border px-4 py-2 rounded-lg hover:border-accent"
