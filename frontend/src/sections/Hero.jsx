@@ -50,7 +50,7 @@ export default function Hero() {
           {/* Social proof rápida */}
           <div className="flex flex-wrap items-center gap-8 mt-14 pt-8 border-t border-border">
             <div>
-              <div className="text-2xl font-bold text-primary">+2 años</div>
+              <div className="text-2xl font-bold text-primary">+1 años</div>
               <div className="text-sm text-muted">Experiencia en backend</div>
             </div>
             <div className="w-px h-10 bg-border hidden sm:block" />
