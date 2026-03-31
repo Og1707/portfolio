@@ -1,0 +1,40 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  # ─────────────────────────────────────
+  # Frontend → Vercel (automático via integración GitHub)
+  # Solo necesitas conectar el repo en vercel.com
+  # ─────────────────────────────────────
+
+  # ─────────────────────────────────────
+  # Backend → Railway
+  # ─────────────────────────────────────
+  deploy-backend:
+    name: Deploy Backend a Railway
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Instalar Railway CLI y deployar
+        run: |
+          npm install -g @railway/cli
+          railway up --service portfolio-backend
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
