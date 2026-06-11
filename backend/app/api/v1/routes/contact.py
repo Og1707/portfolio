@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends, Request, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 from slowapi import Limiter
 from slowapi.util import get_remote_address
+import traceback
 
 from app.core.database import get_db
 from app.core.config import settings
@@ -46,7 +47,8 @@ async def send_contact(
     except ValueError as e:
         raise HTTPException(status_code=422, detail=str(e))
     except Exception as e:
+        print(traceback.format_exc())
         raise HTTPException(
             status_code=500,
-            detail="Error procesando tu mensaje. Por favor intenta de nuevo."
+            detail=str(e) or "Error interno al procesar el contacto. Intenta nuevamente más tarde.",
         )
