@@ -28,13 +28,13 @@ def _build_html(contact_data: dict) -> str:
         <div style="max-width:720px;margin:0 auto;padding:32px 16px;">
             <div style="background:linear-gradient(135deg,#0f172a 0%,#1d4ed8 100%);border-radius:20px 20px 0 0;padding:32px;color:#fff;">
                 <div style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;opacity:.85;">
-                    Nuevo contacto desde el portafolio
+                    Nueva solicitud desde el portafolio
                 </div>
                 <h1 style="margin:10px 0 0;font-size:28px;line-height:1.2;">
-                    🚀 Nuevo contacto: {name} — {service}
+                    🚀 Nueva solicitud: {name} — {service}
                 </h1>
                 <p style="margin:12px 0 0;font-size:15px;line-height:1.6;opacity:.92;">
-                    Recibiste una nueva consulta desde el formulario de contacto.
+                    Recibiste una nueva solicitud desde el formulario de contacto.
                 </p>
             </div>
 
@@ -91,7 +91,7 @@ async def send_contact_notification(contact_data: dict) -> bool:
                 params = {
                         "from": settings.EMAIL_FROM,
                         "to": [settings.EMAIL_TO],
-                        "subject": f"🚀 Nuevo contacto: {str(contact_data.get('name') or 'Sin nombre').strip()} — {str(contact_data.get('service') or 'Sin servicio').strip()}",
+                        "subject": f"🚀 Nueva solicitud 💵: {str(contact_data.get('name') or 'Sin nombre').strip()} — {str(contact_data.get('service') or 'Sin servicio').strip()}",
                         "html": _build_html(contact_data),
                 }
 
