@@ -79,6 +79,7 @@ async def send_contact_notification(contact_data: dict) -> bool:
             username=settings.SMTP_USER,
             password=settings.SMTP_PASSWORD,
             start_tls=True,
+            timeout=15,
         )
 
         logger.info(f"Email de notificación enviado para contacto: {contact_data['email']}")
