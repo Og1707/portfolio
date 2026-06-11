@@ -22,8 +22,8 @@ limiter = Limiter(key_func=get_remote_address)
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup: crear tablas si no existen (solo desarrollo)
-    if settings.APP_ENV == "development":
-        await init_db()
+    
+    await init_db()
     yield
     # Shutdown: aquí irían cierres de conexiones adicionales
 
