@@ -45,8 +45,8 @@ export const PROJECTS = [
     id: 4,
     title: "Colaborador: Detección de Anomalías en Tráfico de Red",
     description:
-      "Este repositorio contiene la implementación en PyTorch de un sistema avanzado para la detección de anomalías en tráfico de red. El modelo combina Modelos de Espacio de Estados Selectivos (Selective SSM), Bloques Espectrales (FFT) y un Filtro de Kalman para el suavizado de predicciones temporales.",
-    problem: "propone una solución a la insuficiencia de los métodos tradicionales de ciberseguridad frente a amenazas modernas en redes de alta velocidad —como ataques zero-day y exfiltraciones de baja intensidad— mediante el diseño matemático de una arquitectura avanzada que integra un modelo de espacio de estados selectivo (dominio temporal), un extractor de características espectrales (dominio de la frecuencia) y un filtro de Kalman para el suavizado estadístico de las predicciones, operando eficazmente sobre el conjunto de datos de tráfico UNSW-NB15.",
+      "Sistema de detección de anomalías en tráfico de red de alta velocidad implementado en PyTorch. Combina Modelos de Espacio de Estados Selectivos (SSM), análisis en el dominio de la frecuencia (FFT) y filtros de Kalman para optimizar la precisión temporal.",
+    problem: "Los métodos de ciberseguridad tradicionales fallan al detectar amenazas modernas (como ataques zero-day y exfiltración sutil) en redes de alta velocidad.",
     solution: "Python + PyTorch + Imbalanced-Learn + Scikit-Learn + Filtro de Kalman",
     tags: ["Python", "PyTorch", "Google Colab", "Pandas", "NumPy", "Scikit-learn","imbalanced-learn"],
     github: "https://github.com/IngLuisVG/Detecci-n-de-anomal-as-en-tr-fico-de-red-mediante-modelos-de-espacio-de-estados-y-an-lisis-espectral",
