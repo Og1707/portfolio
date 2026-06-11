@@ -14,12 +14,10 @@ class Settings(BaseSettings):
     # CORS
     ALLOWED_ORIGINS: str = "http://localhost:3000"
 
-    # Email
-    SMTP_HOST: str = "smtp.gmail.com"
-    SMTP_PORT: int = 587
-    SMTP_USER: str = ""
-    SMTP_PASSWORD: str = ""
+    # Email / Resend
+    RESEND_API_KEY: str = ""
     EMAIL_TO: str = ""
+    EMAIL_FROM: str = ""
 
     # Rate limiting
     RATE_LIMIT_CONTACT: str = "5/minute"
