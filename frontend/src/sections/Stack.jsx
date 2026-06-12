@@ -1,4 +1,5 @@
-import { STACK } from '../constants/stack'
+import { TECHNOLOGIES } from '../constants/technologies'
+import TechCard from '../components/TechCard'
 
 export default function Stack() {
   return (
@@ -16,26 +17,15 @@ export default function Stack() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {STACK.map((category) => (
-            <div key={category.category} className="card">
-              <h3 className="font-bold text-primary mb-5 pb-3 border-b border-border">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          {TECHNOLOGIES.map((category) => (
+            <div key={category.category} className="card h-full">
+              <h3 className="mb-5 border-b border-border pb-3 font-bold text-primary">
                 {category.category}
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {category.items.map((item) => (
-                  <div key={item.name}>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-primary font-medium">{item.name}</span>
-                      <span className="text-muted font-mono">{item.level}%</span>
-                    </div>
-                    <div className="h-1.5 bg-gray-100 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-accent rounded-full transition-all duration-700"
-                        style={{ width: `${item.level}%` }}
-                      />
-                    </div>
-                  </div>
+                  <TechCard key={item.name} name={item.name} role={item.role} />
                 ))}
               </div>
             </div>
