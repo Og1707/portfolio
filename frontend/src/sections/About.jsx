@@ -18,18 +18,10 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-muted leading-relaxed">
               <p>
-                Soy desarrollador backend especializado en <strong className="text-primary">Python</strong> y
-                automatización de procesos con <strong className="text-primary">n8n</strong>. Me apasiona
-                construir software que resuelva problemas reales de negocio.
+                Me especializo en <strong className="font-bold text-slate-900">traducir necesidades complejas de negocio en sistemas estables y automatizados</strong>. No soy solo un ejecutor de código; me involucro en entender la lógica interna de tu empresa para diseñar software que optimice tus costos desde el primer día.
               </p>
               <p>
-                Trabajo con PYMEs y emprendedores que quieren digitalizar sus operaciones
-                sin necesitar un equipo técnico interno. Mi enfoque es simple:
-                <em className="text-primary"> entender primero tu negocio, luego construir la solución.</em>
-              </p>
-              <p>
-                Especializado en conectar sistemas, automatizar flujos de trabajo y construir
-                bots con inteligencia artificial que trabajan 24/7 por tu empresa.
+                Trabajo de forma autónoma con PYMEs, startups y equipos de ingeniería que buscan <strong className="font-bold text-slate-900">velocidad de despliegue sin sacrificar la seguridad de sus datos</strong>. Mi objetivo es simple: que tu infraestructura tecnológica deje de ser un dolor de cabeza y se convierta en tu mayor ventaja competitiva.
               </p>
             </div>
 
@@ -39,7 +31,7 @@ export default function About() {
                 href="https://github.com/Og1707"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-muted hover:text-primary transition-colors border border-border px-4 py-2 rounded-lg hover:border-primary"
+                className="flex items-center gap-2 text-sm text-muted border border-border px-4 py-2 rounded-xl shadow-sm transition-all duration-300 hover:bg-slate-100 hover:border-slate-300 hover:text-primary"
               >
                 <Github size={16} />
                 GitHub
@@ -48,7 +40,7 @@ export default function About() {
                 href="https://www.linkedin.com/in/osman-p%C3%A9rez-690aa9271/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-muted hover:text-accent transition-colors border border-border px-4 py-2 rounded-lg hover:border-accent"
+                className="flex items-center gap-2 text-sm text-muted border border-border px-4 py-2 rounded-xl shadow-sm transition-all duration-300 hover:bg-slate-100 hover:border-slate-300 hover:text-accent"
               >
                 <Linkedin size={16} />
                 LinkedIn
