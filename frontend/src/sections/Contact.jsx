@@ -3,19 +3,16 @@ import { Send, CheckCircle, AlertCircle, Loader } from 'lucide-react'
 import { useContactForm } from '../hooks/useContactForm'
 
 const SERVICES_OPTIONS = [
-  { value: 'software-medida', label: 'Software a la medida' },
-  { value: 'automatizacion', label: 'Automatización de procesos (n8n)' },
-  { value: 'bot-ia', label: 'Bot con Inteligencia Artificial' },
-  { value: 'mantenimiento', label: 'Mantenimiento / Soporte' },
-  { value: 'otro', label: 'Otro / No estoy seguro' },
+  { value: 'software-medida', label: 'Software a la Medida' },
+  { value: 'automatizacion-procesos', label: 'Automatización de Procesos' },
+  { value: 'integracion-ia', label: 'Integración de Inteligencia Artificial' },
+  { value: 'soporte-infraestructura', label: 'Soporte e Infraestructura' },
 ]
 
 const BUDGET_OPTIONS = [
-  { value: 'menos-150', label: 'Menos de $150 USD' },
-  { value: '150-500', label: '$150 - $500 USD' },
-  { value: '500-1000', label: '$500 - $1,000 USD' },
-  { value: 'mas-1000', label: 'Más de $1,000 USD' },
-  { value: 'no-se', label: 'No tengo claro aún' },
+  { value: 'menos-1000', label: 'Menos de $1,000 USD' },
+  { value: '1000-3000', label: '$1,000 - $3,000 USD' },
+  { value: 'mas-3000', label: 'Más de $3,000 USD' },
 ]
 
 export default function Contact() {
@@ -71,15 +68,15 @@ export default function Contact() {
             <div className="space-y-4 text-sm text-muted">
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-accent rounded-full" />
-                <span>Respuesta en menos de 24 horas</span>
+                <span>Contacto directo en menos de 24 horas hábiles</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-accent rounded-full" />
-                <span>Cotización gratuita y sin compromiso</span>
+                <span>Análisis inicial de viabilidad técnica incluido</span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-accent rounded-full" />
-                <span>Precio fijo, sin sorpresas</span>
+                <span>Propuestas transparentes alineadas a tus objetivos</span>
               </div>
             </div>
           </div>
