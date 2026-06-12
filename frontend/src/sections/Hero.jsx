@@ -50,18 +50,18 @@ export default function Hero() {
           {/* Social proof rápida */}
           <div className="flex flex-wrap items-center gap-8 mt-14 pt-8 border-t border-border">
             <div>
-              <div className="text-2xl font-bold text-primary">+1 años</div>
-              <div className="text-sm text-muted">Experiencia en backend</div>
+              <div className="text-2xl font-bold text-primary">Arquitectura de APIs</div>
+              <div className="text-sm text-muted">Diseño robusto y seguro</div>
             </div>
             <div className="w-px h-10 bg-border hidden sm:block" />
             <div>
-              <div className="text-2xl font-bold text-primary">n8n</div>
-              <div className="text-sm text-muted">Automatización avanzada</div>
+              <div className="text-2xl font-bold text-primary">Automatización / IA</div>
+              <div className="text-sm text-muted">Flujos autónomos e integraciones</div>
             </div>
             <div className="w-px h-10 bg-border hidden sm:block" />
             <div>
-              <div className="text-2xl font-bold text-primary">Python</div>
-              <div className="text-sm text-muted">Stack principal</div>
+              <div className="text-2xl font-bold text-primary">Ecosistema Integrado</div>
+              <div className="text-sm text-muted">Conexión de sistemas y CRM</div>
             </div>
           </div>
         </div>
