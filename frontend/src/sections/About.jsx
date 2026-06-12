@@ -62,10 +62,10 @@ export default function About() {
     "Software a la medida"
   ],
   "stack": {
-    "backend": "Python / FastAPI",
+    "backend": "Python (FastAPI, Django) / NestJS",
     "automatizacion": "n8n",
-    "frontend": "React.js",
-    "db": "PostgreSQL"
+    "frontend": "React.js / Next.js",
+    "db": "PostgreSQL / MongoDB / Redis",
   },
   "disponible": True
 }`}

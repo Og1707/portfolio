@@ -1,7 +1,5 @@
-import { Code, Zap, Bot, RefreshCw, CheckCircle } from 'lucide-react'
 import { SERVICES } from '../constants/services'
-
-const ICON_MAP = { Code, Zap, Bot, RefreshCw }
+import ServiceCard from '../components/ServiceCard'
 
 export default function Services() {
   return (
@@ -22,39 +20,15 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {SERVICES.map((service) => {
-            const Icon = ICON_MAP[service.icon]
-            return (
-              <div key={service.id} className="card group hover:border-accent transition-colors">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="p-3 bg-blue-50 rounded-xl group-hover:bg-accent group-hover:text-white transition-colors">
-                    <Icon size={22} className="text-accent group-hover:text-white transition-colors" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-primary text-lg">{service.title}</h3>
-                    <span className="text-accent font-mono text-sm">{service.price}</span>
-                  </div>
-                </div>
-
-                <p className="text-muted mb-5 leading-relaxed">{service.description}</p>
-
-                <ul className="space-y-2">
-                  {service.deliverables.map((item, i) => (
-                    <li key={i} className="flex items-center gap-2 text-sm text-muted">
-                      <CheckCircle size={14} className="text-accent flex-shrink-0" />
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )
-          })}
+        <div className="grid items-stretch gap-6 md:grid-cols-2">
+          {SERVICES.map((service) => (
+            <ServiceCard key={service.id} {...service} />
+          ))}
         </div>
 
         <div className="text-center mt-12">
           <a href="#contacto" className="btn-primary text-base py-4 px-10">
-            Solicitar cotización gratuita
+            Discutir mi proyecto
           </a>
         </div>
       </div>
